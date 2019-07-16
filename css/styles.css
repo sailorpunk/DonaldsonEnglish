@@ -5,11 +5,22 @@
 }
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Tinos', serif;
 }
 
+
 .header {
+  background-image: url('../images/courthouse.jpg');
+  background-position: 350px 0px;
+  background-size: auto 130px;
+  overflow: hidden;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-small {
+  display: none;
 }
 
 .logo {
@@ -27,13 +38,9 @@
 }
 
 .logo a:visited {
-    text-decoration: none;
-    decoration: none;
-    color: var(--logo-color);
-}
-
-.call-us {
-align-self: center;
+  text-decoration: none;
+  decoration: none;
+  color: var(--logo-color);
 }
 
 .icon {
@@ -50,4 +57,170 @@ align-self: center;
   font-size: 30px;
   border-left:3px solid var(--logo-color);
   padding-left: 15px;
+}
+
+.consultation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-us {
+  font-family: 'DM Serif Display', serif;
+  padding: 0px 8px 0px 8px;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  border-style: solid;
+  border: 0px solid;
+  box-shadow: 0 0 10px #000;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar {
+  font-size: 15px;
+}
+
+.phone-icon a {
+  color: white;
+}
+.phone-icon a:hover {
+  text-decoration: none
+  color: white;
+}
+
+.phone-icon a:visited {
+  text-decoration: none;
+  color: var(--logo-color);
+}
+
+.main {
+  padding-top: 10px;
+  background-color: #f5efe9;
+}
+.container {
+  width: auto;
+  margin: auto 30px;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.row-about {
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.description {
+  text-align: right;
+}
+
+.description a {
+  text-decoration: none;
+}
+
+/* .description h1 {
+  font-size: 30px;
+} */
+
+
+.description a:hover {
+  text-decoration: none;
+  color: var(--logo-bg-color);
+}
+
+.main {
+  padding: 20px;
+}
+
+#contact {
+  padding: 0px 30px 0px 30px;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:60.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+@media screen and (min-width: 1250px) {
+  .call-us {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-small {
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .icon {
+    font-size: 15px;
+    padding: 0px 10px 0px 0px;
+  }
+
+  .name p {
+  font-size: 40px;
+  }
+
+  .consultation {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .description {
+    text-align: left;
+  }
+
+  .container {
+    padding: 0px;
+  }
+
+
+@media screen and (max-width: 620px) {
+  .icon {
+    font-size: 10px;
+  }
+
+  .name p {
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .icon {
+    font-size: 6px;
+    padding: 3px 10px 0px 0px;
+  }
+
+  .name p {
+    font-size: 20px;
+  }
 }
