@@ -32,6 +32,9 @@
   width: 350px;
   height: 130px;
 }
+.logo a:link {
+  color: var(--logo-color);
+}
 
 .logo a:hover {
   text-decoration: none;

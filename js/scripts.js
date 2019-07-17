@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('#huh').select();
         document.execCommand('copy');
         temp.remove();
-        alert('Email address copied to clipboard.')
+        alert('donaldsonenglish@delawyers.net copied to clipboard.')
       }
 
       $('.emailCopied').click(function() {
