@@ -156,6 +156,21 @@
   position:absolute;
 }
 
+footer {
+  background-color: var(--logo-bg-color);
+  font-family: 'DM Serif Display', serif;
+  color: white;
+}
+
+footer a{
+  color: white;
+}
+
+footer a:hover{
+color: white;
+text-decoration: none; 
+}
+
 @media screen and (min-width: 1250px) {
   .call-us {
     font-size: 45px;
